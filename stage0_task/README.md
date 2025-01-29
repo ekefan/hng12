@@ -8,7 +8,7 @@ In this task, I'll develop a public API that returns the following information i
 ## API Specification
 
 - Endpoint (send a request): `GET** <the-url>`
-- Response in JSON Format(200 OK):
+- Example Response (200 OK):
     ```bash
     {
         "email":"eebenezer949@gmail.com",
@@ -16,5 +16,19 @@ In this task, I'll develop a public API that returns the following information i
         "github_url": "https://github.com/ekefan/hng12/stage0_task"
     }
     ```
+
+### Run it Locally:
+To run this project locally you need to have golang installed `(version: 1.23.5^)`
+- Clone this repo
+- Access the stage0_task dir
+    ```bash
+        cd stage0_task
+    ```
+- Then run:
+    ```bash
+    go run main.go
+    ```
+
+### BackLink:
 
 JSYK, you can find and hire talented golang developers from HNG here: [https://hng.tech/hire/python-developers](https://hng.tech/hire/python-developers)
