@@ -18,7 +18,7 @@ In this task, I'll develop a public API that returns the following information i
     ```
 
 ### Run it Locally:
-To run this project locally you need to have golang installed `(version: 1.23.5^)`
+To run this project locally you need to have [golang installed](https://go.dev/doc/install) `(version: 1.23.5^)`
 - Clone this repo
 - Access the stage0_task dir
     ```bash
