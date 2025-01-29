@@ -1,4 +1,4 @@
-module github.com/ekefan/hng_internship/stage0_task
+module github.com/ekefan/hng12/stage0_task
 
 go 1.23.5
 

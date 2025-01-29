@@ -21,10 +21,11 @@ func main() {
 		resp := Resp{
 			Email:           "eebenezer949@gmail.com",
 			CurrentDatetime: time.Now().UTC().Format("2006-01-02T15:04:05Z"),
-			GithubURL:       "https://github.com/ekefan/hng_internship/stage0_task",
+			GithubURL:       "https://github.com/ekefan/hng12/stage0_task",
 		}
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(resp)
 	}).Methods("GET")
 
