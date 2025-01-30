@@ -24,10 +24,14 @@ func main() {
 			GithubURL:       "https://github.com/ekefan/hng12/tree/main/stage0_task",
 		}
 		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Credentials", "true")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(resp)
-	}).Methods("GET")
+	})
 
 	err := http.ListenAndServe(":8080", router)
 	if err != nil {
