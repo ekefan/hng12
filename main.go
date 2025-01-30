@@ -21,11 +21,11 @@ func main() {
 		resp := Resp{
 			Email:           "eebenezer949@gmail.com",
 			CurrentDatetime: time.Now().UTC().Format("2006-01-02T15:04:05Z"),
-			GithubURL:       "https://github.com/ekefan/hng12/tree/main/stage0_task",
+			GithubURL:       "https://github.com/ekefan/hng12",
 		}
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Credentials", "true")
-		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
+		w.Header().Set("Access-Control-Allow-Methods", "*")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 		w.Header().Set("Content-Type", "application/json")
