@@ -13,17 +13,13 @@ In this task, I'll develop a public API that returns the following information i
     {
         "email":"eebenezer949@gmail.com",
         "current_datetime": "2025-01-30T09:30:00Z",
-        "github_url": "https://github.com/ekefan/hng12/stage0_task"
+        "github_url": "https://github.com/ekefan/hng12/"
     }
     ```
 
 ### Run it Locally:
 To run this project locally you need to have [golang installed](https://go.dev/doc/install) `(version: 1.23.5^)`
 - Clone this repo
-- Access the stage0_task dir
-    ```bash
-        cd stage0_task
-    ```
 - Then run:
     ```bash
     go run main.go
